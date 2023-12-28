@@ -2,9 +2,9 @@ import { redirect } from "next/navigation";
 
 import { getProviders } from "next-auth/react";
 import { getServerSession } from "next-auth/next";
-import { authOptions } from "../../api/auth/[...nextauth]/route";
 
 import Login from "./login";
+import { authOptions } from "@/helpers/auth-options";
 
 export default async function SignIn({ searchParams }: { searchParams: any }) {
   const session = await getServerSession(authOptions);
