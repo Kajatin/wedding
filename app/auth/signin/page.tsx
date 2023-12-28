@@ -14,6 +14,7 @@ export default async function SignIn({ searchParams }: { searchParams: any }) {
   }
 
   const providers = await getProviders();
+  console.log("providers", providers);
 
   return (
     <div className="absolute inset-0">
