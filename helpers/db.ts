@@ -1,9 +1,16 @@
+import fs from "fs";
 import pgLib from "pg-promise";
 
-// Disable SSL for local development
+// Set SSL configuration
 let ssl: any = null;
 if (process.env.NODE_ENV === "development") {
   ssl = { rejectUnauthorized: false };
+} else {
+  const certPath = "aws-ca.pem";
+  ssl = {
+    rejectUnauthorized: true,
+    ca: fs.readFileSync(certPath).toString(),
+  };
 }
 
 function createSingleton<T>(name: string, create: () => T): T {
