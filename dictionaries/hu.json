@@ -1,6 +1,9 @@
 {
+  "welcome": "Köszöntünk",
+  "enterInvitationCode": "Kérlek add meg a meghívó kódodat.",
   "wedding": "Esküvő",
   "invitationCodePlaceholder": "Meghívó kód",
   "errorLogin": "Valami hiba történt. Kérlek próbáld újra!",
+  "tryAgain": "Vissza a bejelentkezéshez",
   "loginButton": "Belépés"
 }

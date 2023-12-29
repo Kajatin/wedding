@@ -14,9 +14,11 @@ export default function ErrorView(props: { error: string }) {
     <div className="flex flex-col gap-10 items-center justify-center p-4 h-full w-full">
       <div className="flex flex-1" />
 
-      <div className="flex flex-col items-center">
-        <div className="text-3xl">{intlDictionary?.wedding}</div>
-        <div className="text-xl opacity-60">Rebeka & Roland</div>
+      <div className="flex flex-col items-center w-full">
+        <div className="text-3xl">{intlDictionary?.welcome}</div>
+        <div className="text-xl opacity-60 text-center">
+          {intlDictionary?.enterInvitationCode}
+        </div>
       </div>
 
       <div className="flex flex-col items-center w-full max-w-96 gap-6">
@@ -30,7 +32,7 @@ export default function ErrorView(props: { error: string }) {
           href="/"
           className="flex flex-row w-full items-center justify-center rounded-xl px-3 py-1.5 border border-transparent hover:border-sage-600 font-medium transition-all"
         >
-          <button>Try again</button>
+          <button>{intlDictionary?.tryAgain}</button>
         </Link>
       </div>
 

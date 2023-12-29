@@ -1,6 +1,9 @@
 {
+  "welcome": "Welcome",
+  "enterInvitationCode": "Please enter your invitation code.",
   "wedding": "Wedding",
   "invitationCodePlaceholder": "Invitation code",
   "errorLogin": "Something went wrong. Please try again.",
+  "tryAgain": "Go back",
   "loginButton": "Login"
 }

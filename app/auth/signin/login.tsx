@@ -18,15 +18,16 @@ export default function Login(props: { providers: any }) {
   const [, intlDictionary] = useIntlDictionary();
 
   return (
-    <div className="flex flex-col gap-10 items-center justify-center p-4 h-full w-full">
+    <div className="flex flex-col gap-6 items-center justify-center h-full w-full max-w-96">
       <div className="flex flex-1" />
 
-      <div className="flex flex-col items-center">
-        <div className="text-3xl">{intlDictionary?.wedding}</div>
-        <div className="text-xl opacity-60">Rebeka & Roland</div>
+      <div className="text-3xl">{intlDictionary?.welcome}</div>
+
+      <div className="w-full opacity-60 text-center">
+        {intlDictionary?.enterInvitationCode}
       </div>
 
-      <div className="flex flex-col items-start w-full max-w-96">
+      <div className="flex flex-col items-start w-full">
         {error && (
           <div className="text-sm text-apricot-700 text-wrap">
             {intlDictionary?.errorLogin}
