@@ -18,7 +18,7 @@ export default async function SignIn({ searchParams }: { searchParams: any }) {
 
   return (
     <div className="absolute inset-0 p-4">
-      <div className="flex flex-row gap-14 w-full h-full justify-center">
+      <div className="flex flex-row gap-0 sm:gap-14 w-full h-full justify-center">
         <div className="flex h-full justify-end items-center">
           <SvgWreath className="hidden sm:block transform scale-y-[1.45] text-sage-600/80" />
         </div>
