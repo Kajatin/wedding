@@ -22,5 +22,13 @@
   "rsvpNo": "Nem tudok eljönni",
   "rsvpError": "Valami hiba történt és nem tudtuk elmenteni a válaszodat. Kérünk, próbáld újra! Ha a hiba továbbra is fennáll, kérlek írj nekünk emailt:",
   "calendarTitle": "Rebeka & Roland esküvője",
-  "calendarDescription": "A helyszínt a Márai Aktív Turisztikai Látogatóközpont (3300 Eger, Szépasszonyvölgy utca 35.) felől lehet megközelíteni, a jobb kézre lévő bekötőúton kb 100 méter a parkolóig."
+  "calendarDescription": "A helyszínt a Márai Aktív Turisztikai Látogatóközpont (3300 Eger, Szépasszonyvölgy utca 35.) felől lehet megközelíteni, a jobb kézre lévő bekötőúton kb 100 méter a parkolóig.",
+  "locationTitle": "Helyszín",
+  "locationPlacePart1": "Az esküvő a",
+  "locationPlacePart2": "területén kerül megrendezésre Egerben, Magyarországon.",
+  "locationPlacePart3": "Mivel a borászat egy zárt szőlőterületen található, nincs pontos utca- és házszáma. Ezért a legjobb megközelítési mód, ha először a Márai Aktív Turisztikai Látogatóközpont felé",
+  "locationPlacePart4": "3300 Eger, Szépasszonyvölgy utca 35.",
+  "locationPlacePart5": " mentek, és onnan továbbhaladtok a jobbra található összekötő úton 100 méteren át. Ott találjátok meg a parkolót.",
+  "locationGpsInfo": "Fontos megjegyezni, hogy a GPS navigáció téves útvonalat jelölhet ki; a borászat déli irányból, a Szalóki utca felől nem közelíthető meg.",
+  "locationFollowMap": "Kövessétek az alábbi térképen jelölt kék útvonalat, hogy egyszerűen megtaláljátok a borászatot."
 }
