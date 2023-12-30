@@ -5,5 +5,22 @@
   "invitationCodePlaceholder": "Meghívó kód",
   "errorLogin": "Valami hiba történt. Kérlek próbáld újra!",
   "tryAgain": "Vissza a bejelentkezéshez",
-  "loginButton": "Belépés"
+  "loginButton": "Belépés",
+  "rsvp": "Visszaigazolás",
+  "yay": "Juhé!",
+  "rsvpSuccess": "Alig várjuk, hogy találkozzunk veled 2024. szeptember 13-én.",
+  "calendarNote": "Mentsd el a dátumot a naptáradba, hogy ne maradj le!",
+  "calendarButton": "Hozzáadás a naptárhoz",
+  "rsvpFail": "Köszönjük, hogy visszajeleztél",
+  "rsvpFailText": "Sajnáljuk, hogy nem tudsz eljönni. Reméljük, hogy találkozunk hamarosan!",
+  "rsvpFormIntro": "Kérjük, töltsd ki az alábbi űrlapot egyesével minden személy számára aki részt vesz az esküvőn 2024. június 1-ig.",
+  "rsvpName": "Név",
+  "rsvpEmail": "Email",
+  "rsvpSpecial": "Különleges kívánságok",
+  "rsvpSpecialExplanation": "Ha vannak különleges kívánságaid, mint például étkezési korlátozások, kérünk, tudasd velünk.",
+  "rsvpYes": "Ott leszek",
+  "rsvpNo": "Nem tudok eljönni",
+  "rsvpError": "Valami hiba történt és nem tudtuk elmenteni a válaszodat. Kérünk, próbáld újra! Ha a hiba továbbra is fennáll, kérlek írj nekünk emailt:",
+  "calendarTitle": "Rebeka & Roland esküvője",
+  "calendarDescription": "A helyszínt a Márai Aktív Turisztikai Látogatóközpont (3300 Eger, Szépasszonyvölgy utca 35.) felől lehet megközelíteni, a jobb kézre lévő bekötőúton kb 100 méter a parkolóig."
 }

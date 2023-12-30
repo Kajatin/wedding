@@ -9,6 +9,8 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "framer-motion": "^10.16.16",
+    "ics": "^3.7.2",
     "next": "14.0.4",
     "next-auth": "^4.24.5",
     "pg-promise": "^11.5.4",
