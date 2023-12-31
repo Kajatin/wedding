@@ -1,4 +1,5 @@
 import Welcome from "@/components/welcome";
+import Presents from "@/components/presents";
 import Location from "@/components/location";
 import Itinerary from "@/components/itinerary";
 import LanguagePicker from "@/components/lang-picker";
@@ -12,6 +13,7 @@ export default function Home() {
         <CountdownToWedding />
         <Itinerary />
         <Location />
+        <Presents />
         <LanguagePicker />
       </div>
     </main>
