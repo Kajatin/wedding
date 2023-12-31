@@ -10,8 +10,8 @@ export default function LanguagePicker() {
     <div className="flex flex-row rounded-xl border border-sage-600">
       <button
         className={
-          "px-3 py-1.5 text-sm rounded-s-xl hover:bg-sage-400/60 transition-all " +
-          (intl === "hu" ? "bg-sage-400/60" : "")
+          "px-3 py-1.5 text-sm rounded-s-xl hover:bg-sage-600/40 transition-all " +
+          (intl === "hu" ? "bg-sage-600/40" : "")
         }
         onClick={(e) => {
           setCookie("NEXT_LOCALE", "hu");
@@ -23,8 +23,8 @@ export default function LanguagePicker() {
 
       <button
         className={
-          "px-3 py-1.5 text-sm rounded-e-xl hover:bg-sage-400/60 transition-all " +
-          (intl === "en" ? "bg-sage-400/60" : "")
+          "px-3 py-1.5 text-sm rounded-e-xl hover:bg-sage-600/40 transition-all " +
+          (intl === "en" ? "bg-sage-600/40" : "")
         }
         onClick={(e) => {
           setCookie("NEXT_LOCALE", "en");

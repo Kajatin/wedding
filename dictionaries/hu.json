@@ -33,7 +33,7 @@
   "locationFollowMap": "Kövessétek az alábbi térképen jelölt kék útvonalat, hogy egyszerűen megtaláljátok a borászatot.",
   "itineraryTitle": "Menetrend",
   "itineraryDate": "Az esküvő 2024. szeptember 13-án, pénteken kerül megrendezésre. Az alábbi táblázatban láthatjátok a nap eseményeit.",
-  "itineraryWhatToExpect": "Szeretnénk megosztani veletek, hogy az esküvőnk egy intím és visszafogott esemény lesz, ahol a közelség és az öröm áll a középpontban a legkedvesebb hozzátartozóink és barátaink körében. Ez nem lesz egy hagyományos nagy ünnepség, hanem egy lazább és személyesebb összejövetel, ahol mindenki élvezheti a napot egy meghitt, stresszmentes környezetben. Alig várjuk, hogy csodálatos emlékeket teremtsünk mindegyikőtökkel, és ünnepeljük különleges napunkat olyan módon, ami igazán tükröz minket.",
+  "itineraryWhatToExpect": "Szeretnénk megosztani veletek, hogy az esküvőnk egy intím és visszafogott esemény lesz, ahol az együtt töltött idő áll a középpontban. Ez nem lesz egy hagyományos nagy ünnepség, hanem egy lazább és személyesebb összejövetel, ahol mindenki élvezheti a napot egy meghitt, stresszmentes környezetben. Alig várjuk, hogy csodálatos emlékeket teremtsünk mindegyikőtökkel, és ünnepeljük különleges napunkat olyan módon, ami igazán tükröz minket.",
   "itineraryArrivalTime": "16:00",
   "itineraryArrivalDescription": "Érkezés és állófogadás",
   "itineraryCeremonyTime": "17:00",
@@ -47,5 +47,13 @@
   "itineraryDancingTime": "00:30",
   "itineraryDancingDescription": "Tánc és buli",
   "itineraryClosingTime": "03:00",
-  "itineraryClosingDescription": "Búcsúzás"
+  "itineraryClosingDescription": "Búcsúzás",
+  "countdownToWedding": "Az esküvőig",
+  "countdownDays": "nap",
+  "countdownHours": "óra",
+  "countdownMinutes": "perc",
+  "countdownSeconds": "másodperc",
+  "welcomeTitle": "Házasodunk",
+  "welcomeInvitation": "Nagyon szeretettel hívunk meg az esküvőnkre, a szeretet, barátság és a boldogan élnek, míg meg nem halnak ünneplésére.",
+  "welcomeScrollForMore": "Görgess a részletekért"
 }

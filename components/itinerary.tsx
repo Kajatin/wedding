@@ -74,13 +74,13 @@ export default function Itinerary() {
 
         <div>{intlDictionary?.itineraryDate}</div>
 
-        <div className="flex flex-col self-center border border-apricot-700 rounded-xl p-4 ring-1 ring-offset-4 ring-sage-600 min-w-96">
+        <div className="flex flex-col self-center border border-sage-600 rounded-xl p-4 sm:min-w-96">
           {events.map((event, index) => (
             <div
               key={event.time}
               className="grid grid-cols-[auto_1fr] gap-x-4 gap-y-0 items-stretch"
             >
-              <div className="flex flex-row gap-2 items-center px-3 py-1.5 border border-sage-600 rounded-xl hover:bg-sage-600 hover:text-sage-200 group transition-all">
+              <div className="flex flex-row gap-2 items-center px-3 py-1.5 border border-sage-600 rounded-xl hover:bg-sage-600/40 group transition-all">
                 <span className="relative flex">
                   <span className="group-hover:animate-ping absolute inline-flex material-symbols-outlined opacity-75">
                     {event.icon}

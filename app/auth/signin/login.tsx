@@ -37,7 +37,7 @@ export default function Login(props: { providers: any }) {
         <input
           type="text"
           placeholder={intlDictionary?.invitationCodePlaceholder}
-          className="w-full px-4 py-2 rounded-xl outline-none appearance-none bg-sage-400/60 caret-sage-600 border border-transparent focus:border-sage-600 text-center mb-4"
+          className="w-full px-4 py-2 rounded-xl outline-none appearance-none bg-sage-600/40 caret-sage-600 border border-transparent focus:border-sage-600 text-center mb-4"
           value={invitationCode}
           onChange={(e) => setInvitationCode(e.target.value.toUpperCase())}
         />

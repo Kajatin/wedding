@@ -33,7 +33,7 @@
   "locationFollowMap": "Follow the blue path indicated on the map below to find the winery.",
   "itineraryTitle": "Itinerary",
   "itineraryDate": "The wedding will be held on Friday, September 13th, 2024. Please find the outline of the day's events below.",
-  "itineraryWhatToExpect": "We want to share with you that our wedding will be an intimate and understated affair, focusing on the joy and closeness of our nearest and dearest. This won't be your traditional big celebration, but a more relaxed and personal gathering, where we can all enjoy the day in a cozy, stress-free environment. We're looking forward to creating wonderful memories with each of you and celebrating our special day in a way that truly reflects us as a couple.",
+  "itineraryWhatToExpect": "We want to share with you that our wedding will be an intimate and understated affair, focusing on spending time together. This won't be your traditional big celebration, but a more relaxed and personal gathering, where we can all enjoy the day in a cozy, stress-free environment. We're looking forward to creating wonderful memories with each of you and celebrating our special day in a way that truly reflects us as a couple.",
   "itineraryArrivalTime": "04:00 PM",
   "itineraryArrivalDescription": "Arrival and welcome drinks",
   "itineraryCeremonyTime": "05:00 PM",
@@ -47,5 +47,13 @@
   "itineraryDancingTime": "12:30 AM",
   "itineraryDancingDescription": "Dancing and party",
   "itineraryClosingTime": "03:00 AM",
-  "itineraryClosingDescription": "Farewell"
+  "itineraryClosingDescription": "Farewell",
+  "countdownToWedding": "Countdown to the wedding",
+  "countdownDays": "days",
+  "countdownHours": "hours",
+  "countdownMinutes": "minutes",
+  "countdownSeconds": "seconds",
+  "welcomeTitle": "We're getting married",
+  "welcomeInvitation": "We're thrilled to invite you to our wedding, a celebration of love, friendship, and happily ever after.",
+  "welcomeScrollForMore": "Scroll for more"
 }

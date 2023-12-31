@@ -170,7 +170,7 @@ export default function RsvpModal(props: {
                 type="text"
                 placeholder={intlDictionary?.rsvpName}
                 disabled={submitting}
-                className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-400/60 caret-sage-600 border border-transparent focus:border-sage-600"
+                className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-600/40 caret-sage-600 border border-transparent focus:border-sage-600"
                 value={name}
                 onChange={(e) => setName(e.target.value.trim())}
               />
@@ -182,7 +182,7 @@ export default function RsvpModal(props: {
                 type="email"
                 placeholder={intlDictionary?.rsvpEmail}
                 disabled={submitting}
-                className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-400/60 caret-sage-600 border border-transparent focus:border-sage-600"
+                className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-600/40 caret-sage-600 border border-transparent focus:border-sage-600"
                 value={email}
                 onChange={(e) => setEmail(e.target.value.trim())}
               />
@@ -197,7 +197,7 @@ export default function RsvpModal(props: {
                 placeholder={"Special wishes"}
                 disabled={submitting}
                 rows={4}
-                className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-400/60 caret-sage-600 border border-transparent focus:border-sage-600"
+                className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-600/40 caret-sage-600 border border-transparent focus:border-sage-600"
                 value={specialWishes}
                 onChange={(e) => setSpecialWishes(e.target.value)}
               />
@@ -207,8 +207,8 @@ export default function RsvpModal(props: {
               <button
                 disabled={submitting}
                 className={
-                  "px-3 py-1.5 text-sm rounded-s-xl hover:bg-sage-400/60 transition-all flex-1 " +
-                  (canCome ? "bg-sage-400/60" : "")
+                  "px-3 py-1.5 text-sm rounded-s-xl hover:bg-sage-600/40 transition-all flex-1 " +
+                  (canCome ? "bg-sage-600/40" : "")
                 }
                 onClick={() => setCanCome(true)}
               >
@@ -218,8 +218,8 @@ export default function RsvpModal(props: {
               <button
                 disabled={submitting}
                 className={
-                  "px-3 py-1.5 text-sm rounded-e-xl hover:bg-sage-400/60 transition-all flex-1 " +
-                  (!canCome ? "bg-sage-400/60" : "")
+                  "px-3 py-1.5 text-sm rounded-e-xl hover:bg-sage-600/40 transition-all flex-1 " +
+                  (!canCome ? "bg-sage-600/40" : "")
                 }
                 onClick={() => setCanCome(false)}
               >
