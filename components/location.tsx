@@ -8,9 +8,17 @@ export default function Location() {
   return (
     <div className="flex flex-col gap-4 justify-center items-center w-full">
       <div className="flex flex-col gap-4 w-full max-w-screen-md">
-        <div className="w-full text-2xl text-center pb-1 border-b border-sage-600">
-          {intlDictionary?.locationTitle}
+        <div className="w-full flex flex-row gap-4 items-center">
+          <div className="w-full flex-1 border-b border-sage-600" />
+          <div className="text-2xl text-center">
+            {intlDictionary?.locationTitle}
+          </div>
+          <div className="w-full flex-1 border-b border-sage-600" />
         </div>
+
+        {/* <div className="w-full text-2xl text-center pb-1 border-b border-sage-600">
+          {intlDictionary?.locationTitle}
+        </div> */}
 
         <div>
           {intlDictionary?.locationPlacePart1}{" "}
@@ -43,7 +51,7 @@ export default function Location() {
         <div>{intlDictionary?.locationFollowMap}</div>
       </div>
 
-      <div className="w-full sm:w-4/5 border border-sage-600 rounded-xl">
+      <div className="w-full lg:w-4/5 border border-sage-600 rounded-xl">
         <iframe
           className="w-full h-[600px] rounded-xl"
           src="//umap.openstreetmap.fr/de/map/unbenannte-karte_1004358?scaleControl=false&miniMap=false&scrollWheelZoom=false&zoomControl=true&editMode=disabled&moreControl=false&searchControl=null&tilelayersControl=null&embedControl=null&datalayersControl=false&onLoadPanel=undefined&captionBar=false&captionMenus=false"
