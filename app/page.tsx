@@ -1,4 +1,5 @@
 import Photos from "@/components/photos";
+import Contact from "@/components/contact";
 import Welcome from "@/components/welcome";
 import Presents from "@/components/presents";
 import Location from "@/components/location";
@@ -18,6 +19,10 @@ export default function Home() {
         <Presents />
         <Accomodation />
         <Photos />
+        <Contact />
+      </div>
+
+      <div className="flex justify-center pt-12 pb-16">
         <LanguagePicker />
       </div>
     </main>
