@@ -1,3 +1,4 @@
+import Photos from "@/components/photos";
 import Welcome from "@/components/welcome";
 import Presents from "@/components/presents";
 import Location from "@/components/location";
@@ -16,6 +17,7 @@ export default function Home() {
         <Location />
         <Presents />
         <Accomodation />
+        <Photos />
         <LanguagePicker />
       </div>
     </main>

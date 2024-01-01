@@ -49,7 +49,7 @@ export default function Accomodation() {
   }, [intlDictionary]);
 
   return (
-    <div className="flex flex-col gap-4 justify-center items-center w-full">
+    <div className="flex flex-col gap-4 justify-center items-center w-full text-justify">
       <div className="flex flex-col gap-4 w-full max-w-screen-md">
         <div className="w-full flex flex-row gap-4 items-center">
           <div className="w-full flex-1 border-b border-sage-600" />
@@ -69,7 +69,7 @@ export default function Accomodation() {
           {accomodations.map((accomodation) => (
             <div
               key={accomodation.name}
-              className="flex flex-col gap-2 pb-4 items-center rounded-xl border border-sage-600 overflow-hidden max-w-80"
+              className="flex flex-col gap-2 pb-4 items-center rounded-xl border border-sage-600 overflow-hidden max-w-80 hover:scale-105 transition-all"
             >
               <div className="w-full h-36 overflow-hidden">
                 <Image

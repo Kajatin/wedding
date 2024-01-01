@@ -2,7 +2,7 @@
 
 import { useIntlDictionary } from "@/hooks/lang-dict";
 
-export default function Presents() {
+export default function Photos() {
   const [, intlDictionary] = useIntlDictionary();
 
   return (
@@ -11,12 +11,14 @@ export default function Presents() {
         <div className="w-full flex flex-row gap-4 items-center">
           <div className="w-full flex-1 border-b border-sage-600" />
           <div className="text-2xl text-center">
-            {intlDictionary?.presentsTitle}
+            {intlDictionary?.photosTitle}
           </div>
           <div className="w-full flex-1 border-b border-sage-600" />
         </div>
 
-        <div>{intlDictionary?.presentsText}</div>
+        <div>{intlDictionary?.photosText1}</div>
+
+        <div>{intlDictionary?.photosText2}</div>
       </div>
     </div>
   );

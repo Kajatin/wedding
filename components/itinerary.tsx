@@ -72,7 +72,7 @@ export default function Itinerary() {
           {intlDictionary?.itineraryTitle}
         </div> */}
 
-        <div>{intlDictionary?.itineraryDate}</div>
+        <div className="text-justify">{intlDictionary?.itineraryDate}</div>
 
         <div className="flex flex-col self-center border border-sage-600 rounded-xl p-4 sm:min-w-96">
           {events.map((event, index) => (
@@ -103,7 +103,9 @@ export default function Itinerary() {
           ))}
         </div>
 
-        <div>{intlDictionary?.itineraryWhatToExpect}</div>
+        <div className="text-justify">
+          {intlDictionary?.itineraryWhatToExpect}
+        </div>
       </div>
     </div>
   );
