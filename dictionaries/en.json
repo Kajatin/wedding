@@ -70,6 +70,8 @@
   "photosTitle": "Photos",
   "photosText1": "We would love to see the wedding through your eyes! If you capture any special moments or fun snapshots during our big day, please share them with us.",
   "photosText2": "We've set up an online album where you can easily upload your photos and videos. Every photo you share will be a treasured memory for us. Thank you for helping us collect these precious moments!",
+  "photosText3": "To upload your photos, simply scan the QR code below. If that doesn't work, you can also use the following link:",
+  "photosLink": "go to album",
   "contactTitle": "Contact",
   "contactText1": "If you have any questions or need assistance regarding our wedding, please don't hesitate to reach out to us. Whether it's about the venue, accommodations, or just a general inquiry, we're more than happy to provide you with the information you need.",
   "contactText2": "You can contact us directly through ",

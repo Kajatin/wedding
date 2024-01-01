@@ -15,10 +15,26 @@ export default function Photos() {
           </div>
           <div className="w-full flex-1 border-b border-sage-600" />
         </div>
-
         <div>{intlDictionary?.photosText1}</div>
-
         <div>{intlDictionary?.photosText2}</div>
+
+        <div>
+          {intlDictionary?.photosText3}{" "}
+          <a
+            href="https://cloud.rolandkajatin.com/s/waWsPc5RQeptCGS"
+            target="_blank"
+            rel="noreferrer"
+            className="text-apricot-700 hover:underline"
+          >
+            {intlDictionary?.photosLink}
+          </a>
+          .
+        </div>
+
+        <img
+          src="/qr-wedding-upload.svg"
+          className="w-52 self-center border border-sage-600 rounded-xl"
+        />
       </div>
     </div>
   );
