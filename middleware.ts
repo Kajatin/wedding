@@ -22,7 +22,7 @@ export function middleware(request: NextRequest) {
   if (!localeCookie) {
     // Redirect if there is no locale.
     const locale = getLocale(request);
-    const response = NextResponse.redirect(new URL(`/${locale}`, request.url));
+    const response = NextResponse.redirect(new URL(`/`, request.url));
     response.cookies.set("NEXT_LOCALE", locale);
     return response;
   }

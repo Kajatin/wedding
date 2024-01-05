@@ -73,6 +73,7 @@ export default function Accomodation() {
             >
               <div className="w-full h-36 overflow-hidden">
                 <Image
+                  priority
                   src={accomodation.img}
                   alt={accomodation.name}
                   width={320}

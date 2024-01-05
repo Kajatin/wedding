@@ -14,6 +14,7 @@ export default function Welcome() {
         {intlDictionary?.welcomeTitle}
       </div>
       <Image
+        priority
         src="/name-banner.png"
         // className="grayscale brightness-200 mb-10"
         className="mb-2 p-4"
