@@ -18,6 +18,11 @@ export default function Photos() {
         <div>{intlDictionary?.photosText1}</div>
         <div>{intlDictionary?.photosText2}</div>
 
+        <img
+          src="/qr-wedding-upload.svg"
+          className="w-40 self-center border border-sage-600 rounded-xl"
+        />
+
         <div>
           {intlDictionary?.photosText3}{" "}
           <a
@@ -30,11 +35,6 @@ export default function Photos() {
           </a>
           .
         </div>
-
-        <img
-          src="/qr-wedding-upload.svg"
-          className="w-52 self-center border border-sage-600 rounded-xl"
-        />
       </div>
     </div>
   );

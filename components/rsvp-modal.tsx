@@ -207,7 +207,7 @@ export default function RsvpModal(props: {
               <button
                 disabled={submitting}
                 className={
-                  "px-3 py-1.5 text-sm rounded-s-xl hover:bg-sage-600/40 transition-all flex-1 " +
+                  "px-3 py-1.5 text-sm rounded-s-xl hover:bg-sage-600/40 transition-all flex-1 cursor-pointer " +
                   (canCome ? "bg-sage-600/40" : "")
                 }
                 onClick={() => setCanCome(true)}
@@ -218,7 +218,7 @@ export default function RsvpModal(props: {
               <button
                 disabled={submitting}
                 className={
-                  "px-3 py-1.5 text-sm rounded-e-xl hover:bg-sage-600/40 transition-all flex-1 " +
+                  "px-3 py-1.5 text-sm rounded-e-xl hover:bg-sage-600/40 transition-all flex-1 cursor-pointer " +
                   (!canCome ? "bg-sage-600/40" : "")
                 }
                 onClick={() => setCanCome(false)}
