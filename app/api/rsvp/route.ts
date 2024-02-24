@@ -20,19 +20,21 @@ export async function POST(request: Request) {
 
   const body = await request.json();
 
-  if (!body.name || !body.email) {
+  if (!body.name) {
     return NextResponse.json(
       {
-        error: "Name and email are required",
+        error: "Name is required",
       },
       { status: 400 }
     );
   }
 
+  const email = body.email ? body.email : "no-email";
+
   await db.none(
     `INSERT INTO rsvp (name, email, wishes, attending)
     VALUES ($1, $2, $3, $4)`,
-    [body.name, body.email, body.specialWishes, body.canCome]
+    [body.name, email, body.specialWishes, body.canCome]
   );
 
   return NextResponse.json({ success: true });
