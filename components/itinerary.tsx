@@ -30,6 +30,11 @@ export default function Itinerary() {
         description: intlDictionary?.itineraryCeremonyDescription || "",
       },
       {
+        icon: "photo_camera",
+        time: intlDictionary?.itineraryPhotoTime || "",
+        description: intlDictionary?.itineraryPhotoDescription || "",
+      },
+      {
         icon: "restaurant",
         time: intlDictionary?.itineraryDinnerTime || "",
         description: intlDictionary?.itineraryDinnerDescription || "",
