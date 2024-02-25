@@ -20,22 +20,25 @@ export async function POST(request: Request) {
 
   const body = await request.json();
 
-  if (!body.name) {
+  if (!body.names || body.names.length === 0) {
     return NextResponse.json(
       {
-        error: "Name is required",
+        error: "At least one name is required.",
       },
       { status: 400 }
     );
   }
 
   const email = body.email ? body.email : "no-email";
+  const phone = body.phone ? body.phone : "no-phone";
 
-  await db.none(
-    `INSERT INTO rsvp (name, email, wishes, attending)
-    VALUES ($1, $2, $3, $4)`,
-    [body.name, email, body.specialWishes, body.canCome]
-  );
+  // For each name in the list, add a new RSVP entry.
+  for (const name of body.names) {
+    await db.none(
+      `INSERT INTO rsvp (name, email, phone, wishes, attending) VALUES ($1, $2, $3, $4, $5)`,
+      [name, email, phone, body.specialWishes, body.canCome]
+    );
+  }
 
   return NextResponse.json({ success: true });
 }

@@ -16,8 +16,9 @@ export default function RsvpModal(props: {
 
   const [, intlDictionary] = useIntlDictionary();
 
-  const [name, setName] = useState("");
+  const [names, setNames] = useState<string[]>([""]);
   const [email, setEmail] = useState("");
+  const [phone, setPhone] = useState("");
   const [specialWishes, setSpecialWishes] = useState("");
   const [canCome, setCanCome] = useState(true);
   const [submitting, setSubmitting] = useState(false);
@@ -27,7 +28,7 @@ export default function RsvpModal(props: {
   const [calendarDownloaded, setCalendarDownloaded] = useState(false);
 
   const reset = () => {
-    setName("");
+    setNames([]);
     setEmail("");
     setSpecialWishes("");
     setCanCome(true);
@@ -165,15 +166,36 @@ export default function RsvpModal(props: {
             <div>{intlDictionary?.rsvpFormIntro}</div>
 
             <div className="flex flex-col w-full">
-              <div>{intlDictionary?.rsvpName}</div>
-              <input
-                type="text"
-                placeholder={intlDictionary?.rsvpName}
-                disabled={submitting}
-                className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-600/40 caret-sage-600 border border-transparent focus:border-sage-600"
-                value={name}
-                onChange={(e) => setName(e.target.value.trim())}
-              />
+              <div>
+                {names.length > 1
+                  ? intlDictionary?.rsvpNames
+                  : intlDictionary?.rsvpName}
+              </div>
+
+              <div className="flex flex-col gap-2">
+                {names.map((name, i) => (
+                  <input
+                    key={i}
+                    type="text"
+                    placeholder={intlDictionary?.rsvpName}
+                    disabled={submitting}
+                    className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-600/40 caret-sage-600 border border-transparent focus:border-sage-600"
+                    value={name}
+                    onChange={(e) => {
+                      const newNames = [...names];
+                      newNames[i] = e.target.value;
+                      setNames(newNames);
+                    }}
+                  />
+                ))}
+              </div>
+
+              <button
+                className="flex flex-row gap-2 mt-2 w-full items-center justify-center rounded-xl px-3 py-1.5 border border-transparent hover:border-sage-600 font-medium transition-all"
+                onClick={() => setNames([...names, ""])}
+              >
+                <span className="material-symbols-outlined">add</span>
+              </button>
             </div>
 
             <div className="flex flex-col w-full">
@@ -185,6 +207,18 @@ export default function RsvpModal(props: {
                 className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-600/40 caret-sage-600 border border-transparent focus:border-sage-600"
                 value={email}
                 onChange={(e) => setEmail(e.target.value.trim())}
+              />
+            </div>
+
+            <div className="flex flex-col w-full">
+              <div>{intlDictionary?.rsvpPhone}</div>
+              <input
+                type="tel"
+                placeholder={intlDictionary?.rsvpPhone}
+                disabled={submitting}
+                className="w-full px-3 py-1.5 mt-1 rounded-xl outline-none appearance-none bg-sage-600/40 caret-sage-600 border border-transparent focus:border-sage-600"
+                value={phone}
+                onChange={(e) => setPhone(e.target.value.trim())}
               />
             </div>
 
@@ -251,8 +285,9 @@ export default function RsvpModal(props: {
                 const res = await fetch("/api/rsvp", {
                   method: "POST",
                   body: JSON.stringify({
-                    name,
+                    names: names.filter((name) => name.trim().length > 0),
                     email,
+                    phone,
                     specialWishes,
                     canCome,
                   }),
