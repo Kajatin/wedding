@@ -20,7 +20,7 @@ export default function Home() {
         <Presents />
         <DressCode />
         <Accomodation />
-        <Photos />
+        {/* <Photos /> */}
         <Contact />
       </div>
 
